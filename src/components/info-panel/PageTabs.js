@@ -66,7 +66,10 @@ const PageTabs = () => {
           <Link
             className="tab-link"
             name="tab-link"
-            to={{ pathname: "/", state: { from: "home" } }}
+            to={{
+              pathname: "/",
+              state: { from: "home" },
+            }}
           >
             <ListItemText primary={language[lang].dashboard} />
           </Link>

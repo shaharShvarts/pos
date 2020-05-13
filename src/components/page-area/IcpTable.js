@@ -31,12 +31,12 @@ const IcpTable = ({ rowCount, pagination }) => {
 
   useEffect(() => {
     let mounted = true;
-    console.log("useEffect");
+
     if (mounted) {
       // fetch(data)
       // https://www.youtube.com/watch?v=IYCa1F-OWmk <- useEffect
       // https://www.youtube.com/watch?v=9HFwJ9hrmls <= Real Time Data Sending with SocketIO
-      console.log("mounted");
+
       const dataSorted = sortDateTable();
       setData(rowCount ? dataSorted.slice(0, rowCount) : data);
     }
@@ -45,7 +45,6 @@ const IcpTable = ({ rowCount, pagination }) => {
 
   // functions
   const sortDateTable = () => {
-    console.log("sortDateTable");
     const dataSorted = data.sort((a, b) => {
       setOrder(!order);
 

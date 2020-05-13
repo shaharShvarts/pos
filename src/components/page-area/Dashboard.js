@@ -1,12 +1,8 @@
 import React from "react";
-import { useLocation, useHistory } from "react-router-dom";
 import IcpTable from "./IcpTable";
 import "./dashboard.css";
 
 const Dashboard = () => {
-  // const location = useLocation();
-  // const history = useHistory();
-  // console.log(history);
   const cardData = [
     { sign: "$", amount: "3,211.15", percent: "80%" },
     { sign: "€", amount: "3,211.15", percent: "80%" },

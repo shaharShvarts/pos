@@ -3,7 +3,7 @@ import Reports from "./Reports";
 import Dashboard from "./Dashboard";
 import React, { useEffect } from "react";
 import Transactions from "./Transactions";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 // import { PageContext } from "../../PageContext";
 

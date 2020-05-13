@@ -8,11 +8,9 @@
     "@material-ui/lab": "^4.0.0-alpha.52",
     "@material-ui/styles": "^4.9.10",
     "gh-pages": "^2.2.0",
-    "history": "^4.10.1",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
@@ -21,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
