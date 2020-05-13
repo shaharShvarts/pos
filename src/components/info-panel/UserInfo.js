@@ -1,7 +1,7 @@
 import React from "react";
 
 // material-ui
-import unnamed from "img/unnamed.png";
+import unnamed from "../../img/unnamed.png";
 import EditIcon from "@material-ui/icons/Edit";
 import LanguageIcon from "@material-ui/icons/Language";
 import Button from "@material-ui/core/Button";
