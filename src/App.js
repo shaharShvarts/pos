@@ -11,7 +11,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <main>
         <InfoPanel />
         <TopNav />
