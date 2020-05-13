@@ -1,0 +1,30 @@
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  flex: 1 1;
+  padding: 0 0.5em;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+  background-color: #fff;
+  z-index: 1;
+}

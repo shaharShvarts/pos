@@ -1,0 +1,39 @@
+#user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.125em;
+}
+
+.user-image img {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  /* display: block; */
+  max-height: 160px;
+  max-width: 160px;
+  /* margin: 1.25em 0; */
+}
+
+.username {
+  font: bold 1.2rem "Alef";
+  margin-top: 1.25rem;
+  color: #6ba8a9;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container {
+  color: #c8c8c8;
+  display: flex;
+  justify-content: space-evenly;
+  background: #357376;
+  /* height: 32px; */
+  align-items: center;
+  margin: 1.25rem 0;
+}

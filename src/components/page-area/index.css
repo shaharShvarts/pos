@@ -1,0 +1,13 @@
+#pages-area {
+  grid-area: pages-area;
+  background-color: #c4c4c4;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  padding: 0 3em;
+  background-color: #c4c4c4;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,7 @@
+#info-panel {
+  grid-area: info-panel;
+  background-color: #1d4d4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  direction: rtl;
+  line-height: 1;
+  font-family: Alef, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 18em 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "info-panel top-nav"
+    "info-panel pages-area"
+    "footer footer";
+}
+
+::selection {
+  background: #768e8f;
+  color: #fff;
+}
+::-moz-selection {
+  background: #768e8f;
+  color: #fff;
+}

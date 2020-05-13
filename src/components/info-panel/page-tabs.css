@@ -1,0 +1,6 @@
+.tab-link {
+  display: flex;
+  text-align: center;
+  flex-grow: 1;
+  color: #fff;
+}

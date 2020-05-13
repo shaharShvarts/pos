@@ -1,0 +1,14 @@
+{
+  "en": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "reports": "Reports",
+    "tools": "Tools"
+  },
+  "he": {
+    "dashboard": "שולחן עבודה",
+    "transactions": "עסקאות",
+    "reports": "דוחות",
+    "tools": "כלים"
+  }
+}
