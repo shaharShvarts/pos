@@ -15,7 +15,6 @@ const Dashboard = () => {
 
   return (
     <div id="dashboard">
-      {/* cards */}
       <div className="card-container">
         {cardData.map((item, index) => (
           <div className="card" key={index}>
@@ -27,7 +26,6 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* table */}
       <IcpTable rowCount={5} pagination={false} />
     </div>
   );

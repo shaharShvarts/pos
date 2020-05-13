@@ -42,8 +42,3 @@ const PagesArea = () => {
 };
 
 export default PagesArea;
-
-{
-  /* {currentPage()}</div>
-</Route> */
-}

@@ -3,10 +3,6 @@ import React from "react";
 // dependencies
 import IcpTable from "./IcpTable";
 import "./reports.css";
-// import TableFilter from "./TableFilter";
-{
-  /* <TableFilter /> */
-}
 
 function Reports() {
   return (
