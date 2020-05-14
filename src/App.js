@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { hashRouter } from "react-router-dom";
 
 import Footer from "./components/footer";
 import TopNav from "./components/top-nav";
@@ -11,14 +11,14 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router>
+    <hashRouter>
       <main>
         <InfoPanel />
         <TopNav />
         <PagesArea />
         <Footer />
       </main>
-    </Router>
+    </hashRouter>
   );
 };
 
