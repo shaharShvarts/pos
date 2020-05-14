@@ -10,8 +10,11 @@ import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
-import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
-import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
+// import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
+// import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
+// import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+// import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
+import ArrowDropDownSharpIcon from "@material-ui/icons/ArrowDropDownSharp";
 
 // dependencies
 import rows from "./tableData.json";
@@ -100,7 +103,10 @@ const IcpTable = ({ rowCount, pagination }) => {
                   }}
                 >
                   {column.label}
-                  <TableSortLabel active={true} IconComponent={ArrowDropDown} />
+                  <TableSortLabel
+                    active={true}
+                    IconComponent={ArrowDropDownSharpIcon}
+                  />
                 </TableCell>
               ))}
             </TableRow>

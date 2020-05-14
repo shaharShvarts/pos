@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // material-ui
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -41,6 +41,16 @@ const PageTabs = () => {
   const classes = useStyles();
   const [lang, setLang] = useState("he");
 
+  useEffect(() => {
+    setLang("he");
+    if (lang) {
+      console.log("lang", lang);
+    }
+    return () => {
+      setLang("");
+    };
+  }, [lang]);
+
   return (
     <ThemeProvider theme={theme}>
       <List
@@ -48,26 +58,51 @@ const PageTabs = () => {
         classes={{ root: classes.root }}
         aria-label="mailbox folders"
       >
-        <ListItem button data-page="Dashboard" divider disableGutters>
-          <Link className="tab-link" name="tab-link" to="/">
+        <ListItem button divider disableGutters>
+          <Link
+            className="tab-link"
+            name="tab-link"
+            to={{
+              pathname: "/",
+              title: "שולחן עבודה",
+            }}
+          >
             <ListItemText primary={language[lang].dashboard} />
           </Link>
         </ListItem>
 
-        <ListItem button data-page="Transactions" divider disableGutters>
-          <Link className="tab-link" to="/transactions">
+        <ListItem button divider disableGutters>
+          <Link
+            className="tab-link"
+            to={{
+              pathname: "/transactions",
+              title: "עסקאות",
+            }}
+          >
             <ListItemText primary={language[lang].transactions} />
           </Link>
         </ListItem>
 
-        <ListItem button data-page="Reports" divider disableGutters>
-          <Link className="tab-link" to="/reports">
+        <ListItem button divider disableGutters>
+          <Link
+            className="tab-link"
+            to={{
+              pathname: "/reports",
+              title: "דוחות",
+            }}
+          >
             <ListItemText primary={language[lang].reports} />
           </Link>
         </ListItem>
 
-        <ListItem button data-page="Tools" divider disableGutters>
-          <Link className="tab-link" to="/tools">
+        <ListItem button divider disableGutters>
+          <Link
+            className="tab-link"
+            to={{
+              pathname: "/tools",
+              title: "כלים",
+            }}
+          >
             <ListItemText primary={language[lang].tools} />
           </Link>
         </ListItem>

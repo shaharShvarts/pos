@@ -1,0 +1,11 @@
+.top-page {
+  display: flex;
+  align-items: center;
+  height: 3.125em;
+  margin-top: 20px;
+}
+
+.top-page span {
+  margin: 0 0.5em;
+  font-size: 1rem;
+}

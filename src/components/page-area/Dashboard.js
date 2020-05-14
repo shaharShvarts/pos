@@ -1,8 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import IcpTable from "./IcpTable";
+import TopPage from "./TopPage";
 import "./dashboard.css";
 
 const Dashboard = () => {
+  const { title } = useLocation();
+
   const cardData = [
     { sign: "$", amount: "3,211.15", percent: "80%" },
     { sign: "€", amount: "3,211.15", percent: "80%" },
@@ -10,7 +14,8 @@ const Dashboard = () => {
   ];
 
   return (
-    <div id="dashboard">
+    <div id="dashboard" className="page">
+      <TopPage title={title} />
       <div className="card-container">
         {cardData.map((item, index) => (
           <div className="card" key={index}>
