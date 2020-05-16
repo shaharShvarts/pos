@@ -1,5 +1,5 @@
 import React from "react";
-import { hashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import Footer from "./components/footer";
 import TopNav from "./components/top-nav";
@@ -11,14 +11,14 @@ import "./App.css";
 
 const App = () => {
   return (
-    <hashRouter>
+    <HashRouter basename="/">
       <main>
         <InfoPanel />
         <TopNav />
         <PagesArea />
         <Footer />
       </main>
-    </hashRouter>
+    </HashRouter>
   );
 };
 
