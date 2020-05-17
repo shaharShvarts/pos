@@ -7,6 +7,11 @@ import Select from "@material-ui/core/Select";
 import DateFilter from "./DateFilter";
 import AmountFilter from "./AmountFilter";
 import Currency from "./Currency";
+import Exchange from "./Exchange";
+import Card from "./Card";
+import Payments from "./Payments";
+import CardNumber from "./CardNumber";
+import Approval from "./Approval";
 
 import "./tableFilter.css";
 
@@ -73,6 +78,11 @@ const TableFilter = () => {
         {select == "date" && <DateFilter />}
         {select == "amount" && <AmountFilter />}
         {select == "currency" && <Currency />}
+        {select == "exchange" && <Exchange />}
+        {select == "card" && <Card />}
+        {select == "payments" && <Payments />}
+        {select == "cardNumber" && <CardNumber />}
+        {select == "approval" && <Approval />}
       </div>
     </div>
   );

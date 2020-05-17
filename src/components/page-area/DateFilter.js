@@ -6,7 +6,7 @@ import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 
 const useStyles = makeStyles(() => ({
   root: {
-    margin: "0 50px",
+    // margin: "0 50px",
   },
 }));
 

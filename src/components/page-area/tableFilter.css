@@ -1,57 +1,5 @@
 .wrap {
   display: flex;
   align-items: center;
-
-  margin: 0 50px;
+  margin: 0 20px;
 }
-
-div.select {
-  /* position: relative;
-  display: flex;
-  line-height: 3;
-  overflow: hidden;
-  border-radius: 0.25em;
-  background-color: #fff;
-  width: 10em;
-  height: 2em;
-  z-index: 1; */
-}
-
-/* select,
-.date-filter {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-
-  flex: 1 1;
-  padding: 0 0.5em;
-  cursor: pointer;
-  background-color: transparent;
-
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 5px;
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
-  margin-right: 2rem;
-  padding: 1rem;
-  padding-right: 2rem;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-select::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-
-  border-top: 20px solid #f00;
-} */
