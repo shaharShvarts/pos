@@ -1,11 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import DashboardIcon from "@material-ui/icons/Dashboard";
 import IcpTable from "./IcpTable";
 import TopPage from "./TopPage";
 import "./dashboard.css";
 
 const Dashboard = () => {
-  const { title } = useLocation();
+  const { title, type } = useLocation();
 
   const cardData = [
     { sign: "$", amount: "3,211.15", percent: "80%" },
@@ -15,7 +16,7 @@ const Dashboard = () => {
 
   return (
     <div id="dashboard" className="page">
-      <TopPage title={title} />
+      <TopPage title={title} type={type} Icon={DashboardIcon} />
       <div className="card-container">
         {cardData.map((item, index) => (
           <div className="card" key={index}>

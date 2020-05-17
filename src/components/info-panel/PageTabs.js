@@ -65,6 +65,7 @@ const PageTabs = () => {
             to={{
               pathname: "/",
               title: "שולחן עבודה",
+              type: "dashboard",
             }}
           >
             <ListItemText primary={language[lang].dashboard} />
@@ -77,6 +78,7 @@ const PageTabs = () => {
             to={{
               pathname: "/transactions",
               title: "עסקאות",
+              type: "transactions",
             }}
           >
             <ListItemText primary={language[lang].transactions} />
@@ -89,6 +91,7 @@ const PageTabs = () => {
             to={{
               pathname: "/reports",
               title: "דוחות",
+              type: "reports",
             }}
           >
             <ListItemText primary={language[lang].reports} />
@@ -101,6 +104,7 @@ const PageTabs = () => {
             to={{
               pathname: "/tools",
               title: "כלים",
+              type: "tools",
             }}
           >
             <ListItemText primary={language[lang].tools} />

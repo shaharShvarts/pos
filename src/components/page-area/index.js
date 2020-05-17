@@ -22,9 +22,11 @@ const PagesArea = () => {
           to={{
             pathname: "/",
             title: "שולחן עבודה",
+            type: "dashboard",
           }}
         />
       )}
+
       <Switch>
         <Route path="/" exact component={Dashboard} />
         <Route path="/transactions" exact component={Transactions} />

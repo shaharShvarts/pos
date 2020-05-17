@@ -1,14 +1,15 @@
 import React from "react";
 
-import DashboardIcon from "@material-ui/icons/Dashboard";
+import TableFilter from "./TableFilter";
 
 import "./top-page.css";
 
-const TopPage = ({ title }) => {
+const TopPage = ({ type, title, Icon }) => {
   return (
     <div className="top-page">
-      <DashboardIcon />
+      <Icon />
       <span>{title}</span>
+      {type == "reports" && <TableFilter />}
     </div>
   );
 };
