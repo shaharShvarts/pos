@@ -17,74 +17,67 @@ import "./tableFilter.css";
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "row",
     margin: theme.spacing(1),
     minWidth: 120,
-    flexDirection: "row",
     "& .MuiSelect-icon": {
       right: "calc(100% - 24px)",
     },
     "& .MuiSelect-select": {
       paddingLeft: 24,
-      paddingRight: 0,
+      paddingRight: 5,
       width: 100,
+    },
+  },
+  margin: {
+    "& div": {
+      margin: "0 10px",
     },
   },
 }));
 
 const TableFilter = () => {
   const classes = useStyles();
-  const [select, setSelect] = React.useState("");
+  const [option, setOption] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
-  const handleChange = (event) => {
-    setSelect(event.target.value);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
   return (
-    <div className="wrap">
-      <FormControl className={classes.formControl}>
-        <Select
-          labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          value={select}
-          onChange={handleChange}
-          displayEmpty
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={"date"}>תאריך</MenuItem>
-          <MenuItem value={"amount"}>סכום</MenuItem>
-          <MenuItem value={"currency"}>מטבע</MenuItem>
-          <MenuItem value={"exchange"}>תמורה</MenuItem>
-          <MenuItem value={"card"}>כרטיס</MenuItem>
-          <MenuItem value={"payments"}>תשלומים</MenuItem>
-          <MenuItem value={"cardNumber"}>מספר כרטיס</MenuItem>
-          <MenuItem value={"approval"}>מספר אישור</MenuItem>
-        </Select>
-      </FormControl>
-      <div className="wrap">
-        {select == "date" && <DateFilter />}
-        {select == "amount" && <AmountFilter />}
-        {select == "currency" && <Currency />}
-        {select == "exchange" && <Exchange />}
-        {select == "card" && <Card />}
-        {select == "payments" && <Payments />}
-        {select == "cardNumber" && <CardNumber />}
-        {select == "approval" && <Approval />}
+    <FormControl className={classes.formControl}>
+      <Select
+        labelId="demo-controlled-open-select-label"
+        id="demo-controlled-open-select"
+        open={open}
+        onClose={() => setOpen(false)}
+        onOpen={() => setOpen(true)}
+        value={option}
+        onChange={(e) => setOption(e.target.value)}
+        displayEmpty
+      >
+        <MenuItem value="">
+          <em>בחר סינון</em>
+        </MenuItem>
+        <MenuItem value={"date"}>תאריך</MenuItem>
+        <MenuItem value={"amount"}>סכום</MenuItem>
+        <MenuItem value={"currency"}>מטבע</MenuItem>
+        <MenuItem value={"exchange"}>תמורה</MenuItem>
+        <MenuItem value={"card"}>כרטיס</MenuItem>
+        <MenuItem value={"payments"}>תשלומים</MenuItem>
+        <MenuItem value={"cardNumber"}>מספר כרטיס</MenuItem>
+        <MenuItem value={"approval"}>מספר אישור</MenuItem>
+      </Select>
+      <div className={classes.margin}>
+        {option === "date" && <DateFilter />}
+        {option === "amount" && <AmountFilter />}
+        {option === "currency" && <Currency />}
+        {option === "exchange" && <Exchange />}
+        {option === "card" && <Card />}
+        {option === "payments" && <Payments />}
+        {option === "cardNumber" && <CardNumber />}
+        {option === "approval" && <Approval />}
       </div>
-    </div>
+    </FormControl>
   );
 };
 export default TableFilter;

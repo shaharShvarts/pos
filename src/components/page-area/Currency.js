@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& .MuiSelect-select": {
       paddingLeft: 24,
-      paddingRight: 0,
+      paddingRight: 5,
       width: 100,
     },
   },
@@ -26,32 +26,20 @@ const Currency = () => {
   const [select, setSelect] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
-  const handleChange = (event) => {
-    setSelect(event.target.value);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
   return (
     <FormControl className={classes.formControl}>
       <Select
         labelId="demo-controlled-open-select-label"
         id="demo-controlled-open-select"
         open={open}
-        onClose={handleClose}
-        onOpen={handleOpen}
+        onClose={() => setOpen(false)}
+        onOpen={() => setOpen(true)}
         value={select}
-        onChange={handleChange}
+        onChange={(e) => setSelect(e.target.value)}
         displayEmpty
       >
         <MenuItem value="">
-          <em>None</em>
+          <em>בחר מטבע</em>
         </MenuItem>
         <MenuItem value={"shekel"}>₪</MenuItem>
         <MenuItem value={"dollar"}>$</MenuItem>

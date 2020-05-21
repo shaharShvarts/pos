@@ -31,5 +31,13 @@
   },
   "wrapTable": {
     "flexGrow": 1
+  },
+  "success": {
+    "color": "#357376",
+    "fontWeight": "600"
+  },
+  "failed": {
+    "color": "#D61A3C",
+    "fontWeight": "600"
   }
 }

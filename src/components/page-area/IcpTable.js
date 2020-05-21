@@ -29,24 +29,21 @@ const IcpTable = ({ rowCount, pagination }) => {
   const [order, setOrder] = useState(true);
 
   useEffect(() => {
-    let mounted = true;
-
-    if (mounted) {
-      // fetch(data)
-      // https://www.youtube.com/watch?v=IYCa1F-OWmk <- useEffect
-      // https://www.youtube.com/watch?v=9HFwJ9hrmls <= Real Time Data Sending with SocketIO
-
-      const dataSorted = sortDateTable();
-      setData(rowCount ? dataSorted.slice(0, rowCount) : data);
-    }
-    return () => (mounted = false);
+    // fetch(data)
+    // https://www.youtube.com/watch?v=IYCa1F-OWmk <- useEffect
+    // https://www.youtube.com/watch?v=9HFwJ9hrmls <= Real Time Data Sending with SocketIO
+    const dataSorted = sortDateTable();
+    const dataSuccess = dataSorted
+      .filter((row) => row.status !== "failed")
+      .slice(0, rowCount);
+    setData(rowCount ? dataSuccess : dataSorted);
   }, []);
 
   // functions
   const sortDateTable = () => {
+    setOrder(!order);
+    console.log("value : ", rowCount);
     const dataSorted = data.sort((a, b) => {
-      setOrder(!order);
-
       const x = new Date(
         a.date.split("/")[2],
         a.date.split("/")[1],
@@ -123,7 +120,17 @@ const IcpTable = ({ rowCount, pagination }) => {
                     {columns.map((column, index) => {
                       const value = row[column.id];
                       return (
-                        <TableCell key={index} align={column.align}>
+                        <TableCell
+                          key={index}
+                          align={column.align}
+                          className={
+                            value === "success"
+                              ? classes.success
+                              : value === "failed"
+                              ? classes.failed
+                              : ""
+                          }
+                        >
                           {column.format && typeof value === "number"
                             ? column.format(value)
                             : value}

@@ -26,7 +26,6 @@ const PagesArea = () => {
           }}
         />
       )}
-
       <Switch>
         <Route path="/" exact component={Dashboard} />
         <Route path="/transactions" exact component={Transactions} />

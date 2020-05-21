@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import DateFnsUtils from "@date-io/date-fns";
+import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { KeyboardDatePicker } from "@material-ui/pickers";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+
+import rows from "./tableData2.json";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -14,6 +18,24 @@ const DateFilter = () => {
   const classes = useStyles();
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+
+  useEffect(() => {
+    startDate &&
+      endDate &&
+      console.log(
+        rows.filter((item) => {
+          let dbDate = new Date(
+            parseInt(item.date.split("/")[2], 10),
+            parseInt(item.date.split("/")[1], 10) - 1,
+            parseInt(item.date.split("/")[0], 10)
+          );
+          return (
+            dbDate >= new Date(startDate.setHours(0, 0, 0, 0)) &&
+            dbDate <= new Date(endDate.setHours(0, 0, 0, 0))
+          );
+        })
+      );
+  }, [startDate, endDate]);
 
   const options = {
     weekday: "long",
@@ -35,8 +57,6 @@ const DateFilter = () => {
         value={startDate}
         placeholder="תאריך התחלה"
         onChange={(date) => setStartDate(date)}
-        minDate={new Date()}
-        format="dd/MM/yyyy"
         labelFunc={renderLabel}
       />
       <KeyboardDatePicker
@@ -44,8 +64,6 @@ const DateFilter = () => {
         value={endDate}
         placeholder="תאריך סיום"
         onChange={(date) => setEndDate(date)}
-        minDate={new Date()}
-        format="dd/MM/yyyy"
         labelFunc={renderLabel}
       />
     </MuiPickersUtilsProvider>

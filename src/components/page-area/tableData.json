@@ -8,7 +8,8 @@
     "exchange": 40000,
     "card": "American Express",
     "cardNumber": 7541,
-    "approval": 112233
+    "approval": 112233,
+    "status": "success"
   },
   {
     "date": "01/11/2020",
@@ -19,7 +20,8 @@
     "exchange": 20000,
     "card": "Visa",
     "cardNumber": 2630,
-    "approval": 123456
+    "approval": 123456,
+    "status": "failed"
   },
   {
     "date": "02/02/2020",
@@ -30,7 +32,8 @@
     "exchange": 40000,
     "card": "American Express",
     "cardNumber": 4580,
-    "approval": 987456
+    "approval": 987456,
+    "status": "success"
   },
   {
     "date": "01/09/2020",
@@ -41,10 +44,11 @@
     "exchange": 20000,
     "card": "Visa",
     "cardNumber": 7895,
-    "approval": 652816
+    "approval": 652816,
+    "status": "success"
   },
   {
-    "date": "09/01/2020",
+    "date": "03/02/2020",
     "amount": 11000,
     "currency": "Euro",
     "payments": 5,
@@ -52,7 +56,8 @@
     "exchange": 10000,
     "card": "American Express",
     "cardNumber": 8945,
-    "approval": 963258
+    "approval": 963258,
+    "status": "success"
   },
   {
     "date": "06/02/2020",
@@ -63,9 +68,706 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "success"
   },
   {
+    "date": "08/05/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "success"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "success"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "success"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "success"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
     "date": "06/02/2020",
     "amount": 458244,
     "currency": "$",
@@ -74,7 +776,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -85,7 +788,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -96,7 +800,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -107,7 +812,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -118,7 +824,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -129,7 +836,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -140,7 +848,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -151,7 +860,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -162,7 +872,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -173,7 +884,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -184,7 +896,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -195,7 +908,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -206,7 +920,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -217,7 +932,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -228,7 +944,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -239,7 +956,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -250,7 +968,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -261,7 +980,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -272,7 +992,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -283,7 +1004,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -294,7 +1016,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -305,7 +1028,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -316,7 +1040,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -327,7 +1052,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -338,7 +1064,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -349,7 +1076,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -360,7 +1088,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -371,7 +1100,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -382,7 +1112,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -393,7 +1124,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -404,51 +1136,176 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
-    "date": "01/11/2020",
-    "amount": 21000,
-    "currency": "Dollar",
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
+  },
+  {
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
     "payments": 1,
-    "commissions": 200,
-    "exchange": 20000,
+    "commissions": 561,
+    "exchange": 4584,
     "card": "Visa",
-    "cardNumber": 2630,
-    "approval": 123456
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
   },
   {
-    "date": "02/02/2020",
-    "amount": 42000,
-    "currency": "Euro",
-    "payments": 10,
-    "commissions": 2000,
-    "exchange": 40000,
-    "card": "American Express",
-    "cardNumber": 4580,
-    "approval": 987456
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
   },
   {
-    "date": "01/09/2020",
-    "amount": 22300,
-    "currency": "Israel shekel",
-    "payments": 9,
-    "commissions": 2300,
-    "exchange": 20000,
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
     "card": "Visa",
-    "cardNumber": 7895,
-    "approval": 652816
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
   },
   {
-    "date": "09/01/2020",
-    "amount": 11000,
-    "currency": "Euro",
-    "payments": 5,
-    "commissions": 1000,
-    "exchange": 10000,
-    "card": "American Express",
-    "cardNumber": 8945,
-    "approval": 963258
+    "date": "06/02/2020",
+    "amount": 458244,
+    "currency": "$",
+    "payments": 1,
+    "commissions": 561,
+    "exchange": 4584,
+    "card": "Visa",
+    "cardNumber": 5630,
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -459,7 +1316,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -470,7 +1328,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -481,7 +1340,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -492,7 +1352,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -503,7 +1364,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -514,7 +1376,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -525,7 +1388,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -536,7 +1400,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -547,7 +1412,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -558,7 +1424,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -569,7 +1436,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -580,7 +1448,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -591,7 +1460,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -602,7 +1472,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -613,7 +1484,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -624,7 +1496,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -635,7 +1508,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -646,7 +1520,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -657,7 +1532,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -668,7 +1544,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -679,7 +1556,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -690,7 +1568,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -701,7 +1580,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -712,7 +1592,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -723,7 +1604,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -734,7 +1616,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -745,7 +1628,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -756,7 +1640,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -767,7 +1652,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -778,7 +1664,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -789,7 +1676,8 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   },
   {
     "date": "06/02/2020",
@@ -800,6 +1688,7 @@
     "exchange": 4584,
     "card": "Visa",
     "cardNumber": 5630,
-    "approval": 332211
+    "approval": 332211,
+    "status": "failed"
   }
 ]

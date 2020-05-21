@@ -66,4 +66,10 @@ export const columns = [
     minWidth: 170,
     align: "center",
   },
+  {
+    id: "status",
+    label: "מצב",
+    minWidth: 170,
+    align: "center",
+  },
 ];
