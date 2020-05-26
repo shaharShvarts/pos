@@ -23,7 +23,7 @@ main {
   height: 100vh;
   display: grid;
   grid-template-columns: 18em 1fr;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 64px 1fr 50px;
   grid-template-areas:
     "info-panel top-nav"
     "info-panel pages-area"

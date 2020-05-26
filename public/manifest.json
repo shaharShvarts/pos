@@ -1,6 +1,6 @@
 {
   "short_name": "creditech",
-  "name": "Create React App Sample",
+  "name": "מערכת דוחות מתקדמת לצפייה בעסקאות אשראי לצורך מעקב והדפסת שוברים על פי הצורך",
   "icons": [
     {
       "src": "favicon.ico",

@@ -6,7 +6,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 116px);
   padding: 0 3em;
   background-color: #c4c4c4;
   justify-content: space-evenly;
