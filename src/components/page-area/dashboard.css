@@ -83,9 +83,16 @@
   z-index: 1;
 }
 
+@media screen and (min-device-width: 1092px) and (max-device-width: 1200px) {
+  .card {
+    color: rgb(8, 7, 7);
+  }
+}
+
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .card {
-    width: 200px;
+    width: 50px;
+    height: 50px;
   }
 
   .card h1 {
