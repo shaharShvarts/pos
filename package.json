@@ -12,13 +12,15 @@
     "@material-ui/pickers": "^3.2.10",
     "@material-ui/styles": "^4.9.10",
     "date-fns": "^2.13.0",
+    "file-saver": "^2.0.2",
     "gh-pages": "^2.2.0",
     "moment": "^2.25.3",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "xlsx": "^0.16.1"
   },
   "scripts": {
     "start": "react-scripts start",

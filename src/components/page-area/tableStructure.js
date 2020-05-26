@@ -55,14 +55,14 @@ export const columns = [
   },
   {
     id: "cardNumber",
-    label: "מספר כרטיס",
+    label: "מ.כרטיס",
     minWidth: 170,
     align: "center",
     format: (value) => value + "*".repeat(8),
   },
   {
     id: "approval",
-    label: "מספר אישור",
+    label: "מ.אישור",
     minWidth: 170,
     align: "center",
   },

@@ -1,0 +1,11 @@
+td.MuiTableCell-root.MuiTableCell-body.empty-data {
+  text-align: center;
+  color: #c72561;
+  line-height: 10px;
+}
+
+td.MuiTableCell-root.MuiTableCell-body.empty-data > span {
+  vertical-align: super;
+  margin: 0 10px;
+  font-size: 20px;
+}

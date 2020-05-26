@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 // material-ui
 import { makeStyles } from "@material-ui/core/styles";
@@ -11,39 +11,35 @@ import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ErrorIcon from "@material-ui/icons/Error";
+import "./icpTable.css";
 
 // dependencies
-import rows from "./tableData.json";
+import { GlobalContext } from "../context/GlobalState";
 
 import tableStyle from "./tableStyle.json";
 import { columns } from "./tableStructure";
 
 const useStyles = makeStyles(tableStyle);
 
-const IcpTable = ({ rowCount, pagination }) => {
+const IcpTable = ({ rowCount = 0, pagination }) => {
+  const { transactions, filterByRecently } = useContext(GlobalContext);
+
   const classes = useStyles();
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [data, setData] = useState(rows);
+  // const [data, setData] = useState(transactions);
   const [order, setOrder] = useState(true);
 
   useEffect(() => {
-    // fetch(data)
-    // https://www.youtube.com/watch?v=IYCa1F-OWmk <- useEffect
-    // https://www.youtube.com/watch?v=9HFwJ9hrmls <= Real Time Data Sending with SocketIO
-    const dataSorted = sortDateTable();
-    const dataSuccess = dataSorted
-      .filter((row) => row.status !== "failed")
-      .slice(0, rowCount);
-    setData(rowCount ? dataSuccess : dataSorted);
+    rowCount > 0 && filterByRecently(rowCount);
   }, []);
 
   // functions
   const sortDateTable = () => {
     setOrder(!order);
-    console.log("value : ", rowCount);
-    const dataSorted = data.sort((a, b) => {
+    transactions.sort((a, b) => {
       const x = new Date(
         a.date.split("/")[2],
         a.date.split("/")[1],
@@ -58,15 +54,13 @@ const IcpTable = ({ rowCount, pagination }) => {
 
       return order ? (x < y ? 1 : -1) : x > y ? 1 : -1;
     });
-    return dataSorted;
   };
 
   const sortTable = (field) => {
     setOrder(!order);
-    const dataSorted = data.sort((a, b) =>
+    transactions.sort((a, b) =>
       order ? (a[field] < b[field] ? 1 : -1) : a[field] > b[field] ? 1 : -1
     );
-    setData(dataSorted);
   };
 
   const handleChangePage = (event, newPage) => {
@@ -106,7 +100,7 @@ const IcpTable = ({ rowCount, pagination }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data
+            {transactions
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row, index) => {
                 return (
@@ -119,36 +113,48 @@ const IcpTable = ({ rowCount, pagination }) => {
                   >
                     {columns.map((column, index) => {
                       const value = row[column.id];
+
                       return (
-                        <TableCell
-                          key={index}
-                          align={column.align}
-                          className={
-                            value === "success"
-                              ? classes.success
-                              : value === "failed"
-                              ? classes.failed
-                              : ""
-                          }
-                        >
-                          {column.format && typeof value === "number"
-                            ? column.format(value)
-                            : value}
+                        <TableCell key={index} align={column.align}>
+                          {column.format && typeof value === "number" ? (
+                            <div>{column.format(value)}</div>
+                          ) : (
+                            <div
+                              className={
+                                value === "success"
+                                  ? classes.success
+                                  : value === "failed"
+                                  ? classes.failed
+                                  : ""
+                              }
+                            >
+                              {value}
+                            </div>
+                          )}
                         </TableCell>
                       );
                     })}
                   </TableRow>
                 );
               })}
+
+            {transactions.length === 0 && (
+              <TableRow>
+                <TableCell className="empty-data" colspan="100%">
+                  <span>אין נתונים להצגה</span>
+                  <ErrorIcon />
+                </TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
       </TableContainer>
-      {pagination && (
+      {pagination && transactions.length > 0 && (
         <TablePagination
           classes={{ toolbar: classes.toolBar, spacer: classes.spacer }}
           rowsPerPageOptions={[10, 25, 100]}
           component="div"
-          count={data.length}
+          count={transactions.length}
           rowsPerPage={rowsPerPage}
           color="primary"
           page={page}

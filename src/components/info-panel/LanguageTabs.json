@@ -3,12 +3,14 @@
     "dashboard": "Dashboard",
     "transactions": "Transactions",
     "reports": "Reports",
-    "tools": "Tools"
+    "tools": "Tools",
+    "logout": "logout"
   },
   "he": {
     "dashboard": "שולחן עבודה",
     "transactions": "עסקאות",
     "reports": "דוחות",
-    "tools": "כלים"
+    "tools": "כלים",
+    "logout": "התנתק"
   }
 }

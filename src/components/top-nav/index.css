@@ -3,10 +3,13 @@
   grid-area: top-nav;
   background-color: rgb(255, 255, 255);
   position: relative;
-  height: 3.125rem;
+  height: 65px;
   display: flex;
   align-items: center;
-  margin: 0 3em;
+  /* margin: 0 3em; */
+  justify-content: space-between;
+  direction: ltr;
+  flex-grow: 1;
 }
 
 .top-nav::after {

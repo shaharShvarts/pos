@@ -1,6 +1,10 @@
-.tab-link {
+.list-wrap {
   display: flex;
-  text-align: center;
-  flex-grow: 1;
-  color: #fff;
+  align-items: center;
+  width: 140px;
+  margin: auto;
+}
+
+.list-wrap span {
+  text-align: right;
 }

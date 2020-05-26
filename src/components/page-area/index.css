@@ -11,3 +11,14 @@
   background-color: #c4c4c4;
   justify-content: space-evenly;
 }
+
+.action-btn {
+  padding: 0.5em 1em;
+  border: 0;
+  color: #fff;
+  background: #6d6d6d;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}

@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 // material-ui
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
+import DashboardIcon from "@material-ui/icons/Dashboard";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import CreditCardIcon from "@material-ui/icons/CreditCard";
+import AssessmentIcon from "@material-ui/icons/Assessment";
+import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
+
+import { GlobalContext } from "../context/GlobalState";
 
 // dependencies
 import "./page-tabs.css";
@@ -19,7 +27,11 @@ const useStyles = makeStyles(() => ({
     color: "#66A8A9",
     textAlign: "center",
     "& div": {
-      textAlign: "center",
+      justifyContent: "center",
+      color: "#fff",
+    },
+    "& .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover": {
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
     },
   },
 }));
@@ -40,16 +52,22 @@ const theme = createMuiTheme({
 const PageTabs = () => {
   const classes = useStyles();
   const [lang, setLang] = useState("he");
+  const [active, setActive] = useState("dashboard");
+
+  const { resetTable } = useContext(GlobalContext);
 
   useEffect(() => {
-    setLang("he");
-    if (lang) {
-      console.log("lang", lang);
-    }
-    return () => {
-      setLang("");
-    };
-  }, [lang]);
+    resetTable();
+  }, [active]);
+
+  const changeLanguage = () => {
+    setLang("");
+  };
+
+  const logout = () => {
+    sessionStorage.removeItem("loginSession");
+    window.location.reload();
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -58,49 +76,87 @@ const PageTabs = () => {
         classes={{ root: classes.root }}
         aria-label="mailbox folders"
       >
-        <ListItem button divider disableGutters>
+        <ListItem
+          button
+          divider
+          disableGutters
+          selected={active == "dashboard"}
+          onClick={() => setActive("dashboard")}
+        >
           <Link
-            className="tab-link"
-            name="tab-link"
             to={{
               pathname: "/",
               title: "שולחן עבודה",
               type: "dashboard",
             }}
           >
-            <ListItemText primary={language[lang].dashboard} />
+            <div className="list-wrap">
+              <ListItemIcon>
+                <DashboardIcon />
+              </ListItemIcon>
+              <ListItemText primary={language[lang].dashboard} />
+            </div>
           </Link>
         </ListItem>
 
-        <ListItem button divider disableGutters>
+        <ListItem
+          button
+          divider
+          disableGutters
+          selected={active == "transactions"}
+          onClick={() => setActive("transactions")}
+        >
           <Link
-            className="tab-link"
             to={{
               pathname: "/transactions",
               title: "עסקאות",
               type: "transactions",
             }}
           >
-            <ListItemText primary={language[lang].transactions} />
+            <div className="list-wrap">
+              <ListItemIcon>
+                <CreditCardIcon />
+              </ListItemIcon>
+              <ListItemText primary={language[lang].transactions} />
+            </div>
           </Link>
         </ListItem>
 
-        <ListItem button divider disableGutters>
+        <ListItem
+          button
+          divider
+          disableGutters
+          selected={active == "reports"}
+          onClick={() => setActive("reports")}
+        >
           <Link
-            className="tab-link"
             to={{
               pathname: "/reports",
               title: "דוחות",
               type: "reports",
             }}
           >
-            <ListItemText primary={language[lang].reports} />
+            <div className="list-wrap">
+              <ListItemIcon>
+                <AssessmentIcon />
+              </ListItemIcon>
+              <ListItemText primary={language[lang].reports} />
+            </div>
           </Link>
         </ListItem>
 
-        <ListItem button divider disableGutters>
+        {/* <ListItem
+          button
+          divider
+          disableGutters
+          selected={active == "tools"}
+          onClick={() => setActive("tools")}
+        >
+        <div className="list-wrap">
+        <ListItemIcon>
+         <DashboardIcon />
+       </ListItemIcon>
           <Link
-            className="tab-link"
             to={{
               pathname: "/tools",
               title: "כלים",
@@ -108,6 +164,31 @@ const PageTabs = () => {
             }}
           >
             <ListItemText primary={language[lang].tools} />
+          </Link>
+          </div>
+        </ListItem> */}
+
+        <ListItem
+          button
+          divider
+          disableGutters
+          selected={active == "logout"}
+          onClick={() => setActive("logout")}
+        >
+          <Link
+            to={{
+              pathname: "/",
+              title: "התנתק",
+              type: "logout",
+            }}
+            onClick={logout}
+          >
+            <div className="list-wrap">
+              <ListItemIcon>
+                <PowerSettingsNewIcon />
+              </ListItemIcon>
+              <ListItemText primary={language[lang].logout} />
+            </div>
           </Link>
         </ListItem>
       </List>

@@ -33,11 +33,19 @@
     "flexGrow": 1
   },
   "success": {
-    "color": "#357376",
-    "fontWeight": "600"
+    "backgroundColor": "#3d6f1c",
+    "fontWeight": "600",
+    "color": "#fff",
+    "padding": "0.2em",
+    "textTransform": "capitalize",
+    "borderRadius": 5
   },
   "failed": {
-    "color": "#D61A3C",
-    "fontWeight": "600"
+    "backgroundColor": "#D61A3C",
+    "fontWeight": "600",
+    "color": "#fff",
+    "padding": "0.2em",
+    "textTransform": "capitalize",
+    "borderRadius": 5
   }
 }

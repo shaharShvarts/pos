@@ -6,12 +6,18 @@ import EditIcon from "@material-ui/icons/Edit";
 import LanguageIcon from "@material-ui/icons/Language";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 
 import "./user-info.css";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   button: {
     padding: "4px 12px",
+  },
+  menuButton: {
+    // marginRight: theme.spacing(2),
+    color: "#fff",
   },
 }));
 
@@ -20,6 +26,16 @@ const UserInfo = () => {
 
   return (
     <div id="user-info">
+      <div style={{ direction: "ltr" }}>
+        <IconButton
+          edge="end"
+          className={classes.menuButton}
+          color="primary"
+          aria-label="open drawer"
+        >
+          <MenuIcon />
+        </IconButton>
+      </div>
       <div className="user-image">
         <img src={unnamed} alt="user" />
       </div>

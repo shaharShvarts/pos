@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import ExportCSV from "./ExportCSV";
 
-import DateFilter from "./DateFilter";
-import AmountFilter from "./AmountFilter";
-import Currency from "./Currency";
-import Exchange from "./Exchange";
-import Card from "./Card";
-import Payments from "./Payments";
-import CardNumber from "./CardNumber";
-import Approval from "./Approval";
+import { GlobalContext } from "../context/GlobalState";
+
+import DateFilter from "./filters/DateFilter";
+import AmountFilter from "./filters/AmountFilter";
+import CurrencyFilter from "./filters/CurrencyFilter";
+import ExchangeFilter from "./filters/ExchangeFilter";
+import CardFilter from "./filters/CardFilter";
+import PaymentsFilter from "./filters/PaymentsFilter";
+import CardNumberFilter from "./filters/CardNumberFilter";
+import ApprovalFilter from "./filters/ApprovalFilter";
 
 import "./tableFilter.css";
 
@@ -40,44 +43,58 @@ const useStyles = makeStyles((theme) => ({
 
 const TableFilter = () => {
   const classes = useStyles();
-  const [option, setOption] = React.useState("");
-  const [open, setOpen] = React.useState(false);
+  const [option, setOption] = useState("");
+  const [open, setOpen] = useState(false);
+  const { transactions, resetTable } = useContext(GlobalContext);
+
+  useEffect(() => {
+    resetTable();
+  }, [option]);
 
   return (
-    <FormControl className={classes.formControl}>
-      <Select
-        labelId="demo-controlled-open-select-label"
-        id="demo-controlled-open-select"
-        open={open}
-        onClose={() => setOpen(false)}
-        onOpen={() => setOpen(true)}
-        value={option}
-        onChange={(e) => setOption(e.target.value)}
-        displayEmpty
-      >
-        <MenuItem value="">
-          <em>בחר סינון</em>
-        </MenuItem>
-        <MenuItem value={"date"}>תאריך</MenuItem>
-        <MenuItem value={"amount"}>סכום</MenuItem>
-        <MenuItem value={"currency"}>מטבע</MenuItem>
-        <MenuItem value={"exchange"}>תמורה</MenuItem>
-        <MenuItem value={"card"}>כרטיס</MenuItem>
-        <MenuItem value={"payments"}>תשלומים</MenuItem>
-        <MenuItem value={"cardNumber"}>מספר כרטיס</MenuItem>
-        <MenuItem value={"approval"}>מספר אישור</MenuItem>
-      </Select>
+    <>
+      <b>סנן לפי : </b>
+      <FormControl className={classes.formControl}>
+        <Select
+          labelId="demo-controlled-open-select-label"
+          id="demo-controlled-open-select"
+          open={open}
+          onClose={() => setOpen(false)}
+          onOpen={() => setOpen(true)}
+          value={option}
+          onChange={(e) => setOption(e.target.value)}
+          displayEmpty
+        >
+          <MenuItem value="">
+            <em>ללא סינון</em>
+          </MenuItem>
+          <MenuItem value={"date"}>תאריך</MenuItem>
+          <MenuItem value={"amount"}>סכום</MenuItem>
+          <MenuItem value={"currency"}>מטבע</MenuItem>
+          <MenuItem value={"exchange"}>תמורה</MenuItem>
+          <MenuItem value={"card"}>כרטיס</MenuItem>
+          <MenuItem value={"payments"}>תשלומים</MenuItem>
+          <MenuItem value={"cardNumber"}>מספר כרטיס</MenuItem>
+          <MenuItem value={"approval"}>מספר אישור</MenuItem>
+        </Select>
+      </FormControl>
       <div className={classes.margin}>
         {option === "date" && <DateFilter />}
         {option === "amount" && <AmountFilter />}
-        {option === "currency" && <Currency />}
-        {option === "exchange" && <Exchange />}
-        {option === "card" && <Card />}
-        {option === "payments" && <Payments />}
-        {option === "cardNumber" && <CardNumber />}
-        {option === "approval" && <Approval />}
+        {option === "currency" && <CurrencyFilter />}
+        {option === "exchange" && <ExchangeFilter />}
+        {option === "card" && <CardFilter />}
+        {option === "payments" && <PaymentsFilter />}
+        {option === "cardNumber" && <CardNumberFilter />}
+        {option === "approval" && <ApprovalFilter />}
       </div>
-    </FormControl>
+      <ExportCSV
+        className={classes.button}
+        csvData={transactions}
+        fileName={"test"}
+      />
+      {/* <ExportReactCSV csvData={this.state.customers} fileName={this.state.fileName} /> */}
+    </>
   );
 };
 export default TableFilter;

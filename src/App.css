@@ -38,3 +38,9 @@ main {
   background: #768e8f;
   color: #fff;
 }
+
+@media screen and (max-device-width: 1200px) {
+  main {
+    grid-template-columns: 170px 1fr;
+  }
+}

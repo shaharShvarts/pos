@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "date": "07/05/2020",
     "amount": 42000,
     "currency": "Israel shekel",
@@ -12,6 +13,7 @@
     "status": "success"
   },
   {
+    "id": 2,
     "date": "01/11/2020",
     "amount": 21000,
     "currency": "Dollar",
@@ -24,6 +26,7 @@
     "status": "failed"
   },
   {
+    "id": 3,
     "date": "02/02/2020",
     "amount": 42000,
     "currency": "Euro",
@@ -36,6 +39,7 @@
     "status": "success"
   },
   {
+    "id": 4,
     "date": "01/09/2020",
     "amount": 22300,
     "currency": "Israel shekel",
