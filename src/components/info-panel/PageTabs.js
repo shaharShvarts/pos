@@ -65,6 +65,7 @@ const PageTabs = () => {
   };
 
   const logout = () => {
+    setActive("reports");
     sessionStorage.removeItem("loginSession");
     window.location.reload();
   };
@@ -82,21 +83,19 @@ const PageTabs = () => {
           disableGutters
           selected={active == "dashboard"}
           onClick={() => setActive("dashboard")}
+          component={Link}
+          to={{
+            pathname: "/",
+            title: "שולחן עבודה",
+            type: "dashboard",
+          }}
         >
-          <Link
-            to={{
-              pathname: "/",
-              title: "שולחן עבודה",
-              type: "dashboard",
-            }}
-          >
-            <div className="list-wrap">
-              <ListItemIcon>
-                <DashboardIcon />
-              </ListItemIcon>
-              <ListItemText primary={language[lang].dashboard} />
-            </div>
-          </Link>
+          <div className="list-wrap">
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary={language[lang].dashboard} />
+          </div>
         </ListItem>
 
         <ListItem
@@ -105,21 +104,19 @@ const PageTabs = () => {
           disableGutters
           selected={active == "transactions"}
           onClick={() => setActive("transactions")}
+          component={Link}
+          to={{
+            pathname: "/transactions",
+            title: "עסקאות",
+            type: "transactions",
+          }}
         >
-          <Link
-            to={{
-              pathname: "/transactions",
-              title: "עסקאות",
-              type: "transactions",
-            }}
-          >
-            <div className="list-wrap">
-              <ListItemIcon>
-                <CreditCardIcon />
-              </ListItemIcon>
-              <ListItemText primary={language[lang].transactions} />
-            </div>
-          </Link>
+          <div className="list-wrap">
+            <ListItemIcon>
+              <CreditCardIcon />
+            </ListItemIcon>
+            <ListItemText primary={language[lang].transactions} />
+          </div>
         </ListItem>
 
         <ListItem
@@ -128,68 +125,40 @@ const PageTabs = () => {
           disableGutters
           selected={active == "reports"}
           onClick={() => setActive("reports")}
+          component={Link}
+          to={{
+            pathname: "/reports",
+            title: "דוחות",
+            type: "reports",
+          }}
         >
-          <Link
-            to={{
-              pathname: "/reports",
-              title: "דוחות",
-              type: "reports",
-            }}
-          >
-            <div className="list-wrap">
-              <ListItemIcon>
-                <AssessmentIcon />
-              </ListItemIcon>
-              <ListItemText primary={language[lang].reports} />
-            </div>
-          </Link>
-        </ListItem>
-
-        {/* <ListItem
-          button
-          divider
-          disableGutters
-          selected={active == "tools"}
-          onClick={() => setActive("tools")}
-        >
-        <div className="list-wrap">
-        <ListItemIcon>
-         <DashboardIcon />
-       </ListItemIcon>
-          <Link
-            to={{
-              pathname: "/tools",
-              title: "כלים",
-              type: "tools",
-            }}
-          >
-            <ListItemText primary={language[lang].tools} />
-          </Link>
+          <div className="list-wrap">
+            <ListItemIcon>
+              <AssessmentIcon />
+            </ListItemIcon>
+            <ListItemText primary={language[lang].reports} />
           </div>
-        </ListItem> */}
+        </ListItem>
 
         <ListItem
           button
           divider
           disableGutters
           selected={active == "logout"}
-          onClick={() => setActive("logout")}
+          onClick={logout}
+          component={Link}
+          to={{
+            pathname: "/",
+            title: "התנתק",
+            type: "logout",
+          }}
         >
-          <Link
-            to={{
-              pathname: "/",
-              title: "התנתק",
-              type: "logout",
-            }}
-            onClick={logout}
-          >
-            <div className="list-wrap">
-              <ListItemIcon>
-                <PowerSettingsNewIcon />
-              </ListItemIcon>
-              <ListItemText primary={language[lang].logout} />
-            </div>
-          </Link>
+          <div className="list-wrap">
+            <ListItemIcon>
+              <PowerSettingsNewIcon />
+            </ListItemIcon>
+            <ListItemText primary={language[lang].logout} />
+          </div>
         </ListItem>
       </List>
     </ThemeProvider>

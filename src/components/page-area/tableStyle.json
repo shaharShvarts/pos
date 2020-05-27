@@ -6,17 +6,17 @@
     "borderRadius": "5px"
   },
   "tableHeader": {
-    "backgroundColor": "#357376",
+    "backgroundColor": "rgb(99,97,98)",
     "color": "#fff",
     "cursor": "pointer",
     "userSelect": "none"
   },
   "tableRow": {
     "&:nth-of-type(odd)": {
-      "backgroundColor": "#dadada"
+      "backgroundColor": "rgb(249,249,249)"
     },
     "&:nth-of-type(even)": {
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "rgb(238,181,104)"
     },
     "&:hover": {
       "backgroundColor": "#cacaca"

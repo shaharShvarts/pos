@@ -8,3 +8,11 @@
 .list-wrap span {
   text-align: right;
 }
+
+.list-wrap svg {
+  fill: #636162;
+}
+
+/* svg {
+  fill: #636162 !important;
+} */

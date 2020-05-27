@@ -6,9 +6,9 @@
 .page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 116px);
+  height: calc(100vh - 114px);
   padding: 0 3em;
-  background-color: #c4c4c4;
+  background-color: rgb(141, 141, 141);
   justify-content: space-evenly;
 }
 

@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
     direction: "ltr",
+    "& .MuiAppBar-colorTransparent": {
+      backgroundColor: "rgba(249,249,249)",
+    },
   },
   menuButton: {
     marginRight: theme.spacing(2),

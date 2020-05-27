@@ -17,6 +17,10 @@ import ErrorLogin from "./ErrorLogin";
 const useStyles = makeStyles((theme) => ({
   root: {
     direction: "ltr",
+    color: "#d35700",
+    "& a": {
+      color: "#d35700",
+    },
   },
   paper: {
     marginTop: theme.spacing(8),
@@ -51,6 +55,11 @@ const useStyles = makeStyles((theme) => ({
 
   submit: {
     margin: theme.spacing(3, 0, 2),
+    backgroundColor: "#c65101",
+    color: "#fff",
+    "&:hover": {
+      backgroundColor: "#f1914e",
+    },
   },
 }));
 
@@ -73,7 +82,7 @@ const SignIn = ({ setLogin }) => {
     email === "" && setInvalidEmail(true);
     password === "" && setInvalidPassword(true);
 
-    email === "shahar.shvarts@gmail.com" && password === "123456"
+    email === "creditech.co.il" && password === "1234"
       ? setLogin(
           sessionStorage.setItem(
             "loginSession",
@@ -93,7 +102,7 @@ const SignIn = ({ setLogin }) => {
           <img src={Login} alt="logo" />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          מערכת דוחות אשראי
         </Typography>
         <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <TextField
@@ -134,12 +143,11 @@ const SignIn = ({ setLogin }) => {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
             className={classes.submit}
           >
             Sign In
           </Button>
-          <Grid container>
+          {/* <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
                 Forgot password?
@@ -150,7 +158,7 @@ const SignIn = ({ setLogin }) => {
                 Don't have an account? Sign Up
               </Link>
             </Grid>
-          </Grid>
+          </Grid> */}
         </form>
       </div>
     </Container>

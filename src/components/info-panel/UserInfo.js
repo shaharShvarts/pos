@@ -2,6 +2,7 @@ import React from "react";
 
 // material-ui
 import unnamed from "../../img/unnamed.png";
+import camera from "../../img/camera.png";
 import EditIcon from "@material-ui/icons/Edit";
 import LanguageIcon from "@material-ui/icons/Language";
 import Button from "@material-ui/core/Button";
@@ -14,10 +15,17 @@ import "./user-info.css";
 const useStyles = makeStyles((theme) => ({
   button: {
     padding: "4px 12px",
+    "& .MuiSvgIcon-root": {
+      fill: "#636162",
+    },
   },
   menuButton: {
     // marginRight: theme.spacing(2),
     color: "#fff",
+  },
+  image: {
+    backgroundImage: `url(${camera})`,
+    height: 160,
   },
 }));
 
@@ -37,7 +45,7 @@ const UserInfo = () => {
         </IconButton>
       </div>
       <div className="user-image">
-        <img src={unnamed} alt="user" />
+        <img src={camera} alt="user" />
       </div>
       <i className="username">ישראל ישראלי</i>
       <div className="container">

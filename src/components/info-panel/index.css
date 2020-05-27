@@ -1,6 +1,6 @@
 #info-panel {
   grid-area: info-panel;
-  background-color: #1d4d4f;
+  background-color: rgb(225, 136, 56);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
