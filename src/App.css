@@ -40,6 +40,11 @@ main {
   color: #fff;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-device-width: 1200px) {
   main {
     grid-template-columns: 170px 1fr;
