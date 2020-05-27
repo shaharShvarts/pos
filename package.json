@@ -1,8 +1,8 @@
 {
-  "name": "creditech",
+  "name": "posreport",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shaharshvarts.github.io/creditech",
+  "homepage": "https://shaharshvarts.github.io/posreport",
   "dependencies": {
     "@date-io/date-fns": "^1.3.13",
     "@date-io/moment": "^1.3.13",
