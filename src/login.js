@@ -80,7 +80,7 @@ const SignIn = ({ setLogin }) => {
     email === "" && setInvalidEmail(true);
     password === "" && setInvalidPassword(true);
 
-    email === "xx1976xx" && password === "1234"
+    email === "pos@test.co.il" && password === "12345"
       ? setLogin(
           sessionStorage.setItem(
             "loginSession",
