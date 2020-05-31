@@ -19,6 +19,7 @@ import ApprovalFilter from "./filters/ApprovalFilter";
 import "./tableFilter.css";
 
 const useStyles = makeStyles((theme) => ({
+  root: {},
   formControl: {
     display: "flex",
     alignItems: "center",
@@ -32,11 +33,13 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: 24,
       paddingRight: 5,
       width: 100,
+      color: "#e18838",
     },
   },
   margin: {
     "& div": {
       margin: "0 10px",
+      "&:hover": {},
     },
   },
 }));
@@ -64,6 +67,8 @@ const TableFilter = () => {
           value={option}
           onChange={(e) => setOption(e.target.value)}
           displayEmpty
+          onMouseEnter={(e) => (e.target.style.color = "#495054")}
+          onMouseLeave={(e) => (e.target.style.color = "#ffffff")}
         >
           <MenuItem value="">
             <em>ללא סינון</em>
