@@ -1,0 +1,136 @@
+.MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: rgba(249,249,249);
+}
+.card {
+    /* background-color: rgba(209,83,0); */
+    width: 16.875rem;
+    height: 12.5rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    /* box-shadow: 5px 5px 8px 1px #101010; */
+    box-shadow: 1px 1px 5px -1px #101010;
+    padding: 10px;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgb(209,83,0), rgb(238,181,104));
+}
+.card:nth-child(1) {
+    /* background-image: linear-gradient(90deg, rgb(209,83,0), rgb(238,181,104)); */
+}
+.card:nth-child(2) {
+    /* background-image: linear-gradient(90deg, rgb(209,83,0), rgb(238,181,104)); */
+}
+.card:nth-child(3) {
+    /* background-image: linear-gradient(90deg, rgb(209,83,0), rgb(238,181,104)); */
+}
+.card::before, .card:nth-child(1)::after {
+    background-color: rgba(238, 181, 104, 0.46);
+}
+.card:nth-child(1)::before, .card:nth-child(3)::after {
+    /* background-color: #e8835c6e; */
+}
+.card:nth-child(2)::before, .card:nth-child(3)::after {
+    /* background-color: #e8835c6e; */
+}
+.card:nth-child(3)::before, .card:nth-child(3)::after {
+    /* background-color: #e8835c6e; */
+}
+.card::before, .card::after {
+    background-color: rgba(238, 181, 104, 0.46);
+}
+.money-sign {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 6rem;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+    text-align: end;
+    z-index: 1;
+    position: absolute;
+    top: 112px;
+    left: 20px;
+    font-family: monospace;
+}
+.dollar {
+    position: absolute;
+    top: 61px;
+    left: 122px;
+}
+.card > h3 {
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    FONT-SIZE: xx-large;
+}
+.card > header {
+    position: absolute;
+    top: 40px;
+    /* font-family: alef; */
+    font-size: 1.5rem;
+    right: 35px;
+    font-weight: bold;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 116px);
+    padding: 0 3em;
+    background-color: rgb(141,141,141);
+    justify-content: space-evenly;
+}
+#info-panel {
+    grid-area: info-panel;
+    background-color: rgb(246,151,41);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.container {
+    color: #c8c8c8;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(99,97,98);
+    /* height: 32px; */
+    align-items: center;
+    margin: 1.25rem 0;
+}
+.username {
+    font: bold 1.2rem "Alef";
+    margin-top: 1.25rem;
+    color: rgb(97,97, 98);
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.makeStyles-root-53 div {
+    color: rgb(249,249,249);
+    justify-content: center;
+}
+body {
+    font-size: 100%;
+    direction: rtl;
+    line-height: 1;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(249,249,249);
+}
+.makeStyles-tableRow-190:nth-of-type(odd) {
+    background-color: rgb(249,249,249);
+}
+.makeStyles-tableRow-190:nth-of-type(even) {
+    background-color: rgb(238,181,104);
+}
+.makeStyles-tableHeader-189 {
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(99,97,98);
+}
